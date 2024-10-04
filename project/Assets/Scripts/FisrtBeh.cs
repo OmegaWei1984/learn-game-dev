@@ -8,6 +8,10 @@ public class FistBuh : MonoBehaviour
     void Start()
     {
         Debug.Log("start");
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.name = "a cube";
+        cube.transform.position = new Vector3(0, Random.Range(0, 5), 0);
+        cube.transform.parent = this.transform;
     }
 
     // Update is called once per frame
