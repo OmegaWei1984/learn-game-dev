@@ -67,3 +67,34 @@ float width = size.x;  // 长
 float height = size.y; // 高
 float depth = size.z;  // 宽
 ```
+
+## 空间与运动
+
+### 坐标系
+
+世界坐标（绝对坐标）：场景的绝对坐标系统。
+
+对象坐标（相对坐标）：游戏对象相对父对象的坐标。
+
+Unity 为左手坐标系。
+
+![左手坐标系](/images/left-handed.png)
+
+### Transform 组件
+
+几个常用方法
+
+- 平移 `Translate`
+- 旋转 `Rotate`
+- 围绕 `RotateAround`
+- 面向 `LookAt`
+
+### Vector3
+
+用来描述三维向量的结构体，详细的属性、方法和运算的描述可看 [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)。
+
+### quaternion
+
+用来描述旋转的结构体。
+
+[游戏编程知识课程 - 3D数学 (四元数quaternion)](https://www.bilibili.com/video/BV1Gi4y1q7Bh)
